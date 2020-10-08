@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    
+  }
+  .container{
+      height: 100%;
+      background-image: url(pexels-eberhard-grossgasteiger-1624497.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;/*que cubra 100 el contenedor*/
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;/*dar espacio dentre medio de los elemsntos*/
+    align-items: center;
+  }
+.search--container{
+height: 45%;
+background-image: url(bhg5.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover; 
+
+}
+  
+header{
+     font-size: 2.5rem;
+     color: aliceblue;
+     margin-top: 8rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+  }
+  .titulo.titulo1,
+  .titulo.titulo2{
+      font-weight : 400;
+
+  }
+  h2{
+      width: fit-content;
+      margin-top: 0.8rem;
+      font-size: 00.8rem;
+      color: white;
+      text-transform:uppercase;
+
+
+  } 
+  .btn{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    padding: 0.8rem 6rem;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.btn.hover{
+    background-color:rgb(105, 93, 105) ;
+}
+svg{
+    fill: currentColor;
+    color: whitesmoke;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+   
+}
+.profile--pic{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 40px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+.header--search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+p{
+    color: whitesmoke;
+    margin-left: 2rem;
+}
+p.saludo{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   font-size: 2rem;
+
+}
+p.search-text1{
+        margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+ 
+ }
+ p.search-text2{
+   font-size: 2.5rem;
+   color: yellow;
+}
+input{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 87%;
+    height: 2rem;
+    border-radius: 25px;
+    padding-top: 0.5rem;
+    padding-bottom: .8rem;
+    padding-left: 42px;
+
+}
+.search--input{
+    position: relative;
+    width: 83%;
+      }
+input:focus{
+    outline: 0;
+
+}
+.svg--search{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0px;
+    left: 10px;
+    fill: currentColor;
+    color: darkgray;
+}
